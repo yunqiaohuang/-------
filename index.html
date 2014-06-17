@@ -1,0 +1,2812 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>台灣特色火車站</title>
+	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/_dependent/greensock/plugins/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="js/_dependent/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="js/_examples/modernizr.custom.min.js"></script>
+  	<script type="text/javascript" src="js/_mobile/iscroll.js"></script>
+  	<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+  	<script type="text/javascript" src="js/_examples/demo.js"></script>
+    <meta name="description" content="Sprint is free website template, responsive bootstrap, HTML5 CSS3 layout that can be used for any website.">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="stylesheet" href="css/slideshow1.css">
+
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    
+    <script src="js/jquery.slideshow.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+
+
+</head>
+<body>
+<style>
+#content-wrapper {
+	margin:0 auto
+}
+div2 > img {
+  width: auto;
+  height : auto;
+}
+</style>
+<div id="content-wrapper" style="position:absolute;text-align:center;height:100%;width:100%">
+	  	<script type="text/javascript">
+	  		var controller;
+	  		if (Modernizr.touch) {
+	  			var myScroll;
+	  			$(document).ready(function () {
+	  				// wrap for iscroll
+		  			$("#content-wrapper")
+		  				.addClass("scrollContainer")
+		  				.wrapInner('<div class="scrollContent"></div>');
+
+		  			// add iScroll
+	  				myScroll = new IScroll('#content-wrapper', {scrollX: false, scrollY: true, scrollbars: true, useTransform: false, useTransition: false, probeType: 3});
+					
+	  				// update container on scroll
+					myScroll.on("scroll", function () {
+						controller.update();
+					});
+
+					// overwrite scroll position calculation to use child's offset instead of parents scrollTop();
+					controller.scrollPos(function () {
+						return -myScroll.y;
+					});
+
+					// refresh height, so all is included.
+					setTimeout(function () {
+					    myScroll.refresh();
+					}, 0);
+
+	  				$("#content-wrapper").on("touchend", "a", function (e) {
+	  					// a bit dirty workaround for links not working in iscroll for some reason...
+	  					e.preventDefault();
+	  					window.location.href = $(this).attr("href");
+	  				});
+
+					// manual set hight (so height 100% is available within scroll container)
+		  			$(document).on("orientationchange", function () {
+			  			$("section")
+			  				.css("min-height", $(window).height())
+			  				.parent(".scrollmagic-pin-spacer").css("min-height", $(window).height());
+		  			});
+		  			$(document).trigger("orientationchange"); // trigger to init
+	  			});
+	  			// init the controller
+	  			controller = new ScrollMagic({
+		  			container: "#content-wrapper",
+		  			globalSceneOptions: {
+		  				triggerHook: "onLeave"
+		  			}
+		  		});
+	  		} else {
+	  			// init the controller
+		  		controller = new ScrollMagic({
+		  			globalSceneOptions: {
+		  				triggerHook: "onLeave"
+		  			}
+		  		});
+	  		}
+
+	  	</script>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+	<!--  Free HTML5 Template by http://www.templatemo.com "http://www.templatemo.com/page/1"-->
+
+
+	
+   
+<!--背景圖片start -->   
+ 	<div class="navbar-fixed-top">
+    <div class="site-slider">
+    <div class="slideshow autoPlay" style="opacity:0.35">
+        <ul>
+            <li><img src="images/trainbg2/1.jpg" title="title" alt="" />
+            </li>
+	 		<li><img src="images/trainbg2/2.jpg" title="title" alt="" />
+	 		</li>
+	 		<li>
+		 	<img src="images/trainbg2/3.jpg" title="title" alt="" />
+	 		</li>
+	 		<li>
+			<img src="images/trainbg2/4.jpg" title="title" alt="" />
+	 		</li>
+     		<li>
+			<img src="images/trainbg2/5.jpg" title="title" alt="" />
+	 		</li>
+    		 <li>
+			<img src="images/trainbg2/6.jpg" title="title" alt="" />
+	 		</li>
+     		<li>
+			<img src="images/trainbg2/7.jpg" title="title" alt="" />
+	 		</li>
+     		<li>
+            <img src="images/trainbg2/8.jpg" title="title" alt="" /></li>
+     		<li>
+			<img src="images/trainbg2/9.jpg" title="title" alt="" /></li>
+     		<li>
+			<img src="images/trainbg2/10.jpg" title="title" alt="" /></li>
+    	 </ul>
+     </div>
+     </div>
+     </div>
+<!--背景圖片end -->
+   
+   
+ <!--menu sart-->
+    <div id="front">
+        <div class="site-header">
+          <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div id="logo">
+                            <h1><a href="#front">台灣特色火車站</a></h1>
+                        </div> 
+                     </div>
+                    <!-- /.col-md-4 -->
+                    
+                    <div class="col-md-8 col-sm-6 col-xs-6">
+                        <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                        <div class="main-menu">
+                            <ul>
+                                
+                                <li><a href="#n">北部</a></li>
+                                <li><a href="#c">中部</a></li>
+                                <li><a href="#s">南部</a></li>
+                                <li><a href="#e">東部</a></li>
+                            </ul>
+                        </div> <!-- /.main-menu -->
+                    </div> <!-- /.col-md-8 -->
+              </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="responsive">
+                            <div class="main-menu">
+                                <ul>
+                                    <li><a href="#n">北部</a></li>
+                                    <li><a href="#c">中部</a></li>
+                                    <li><a href="#s">南部</a></li>
+                                    <li><a href="#e">東部</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </div> <!-- /.site-header -->
+    </div>
+    <!-- /menu end -->
+  
+
+<!-- 台灣 start--> 
+
+     <section id="tweens"> <!-- scroll sense start-->
+   		 <div class="content-section section" id="tw">
+         <div class="container">
+       		 <div3 class="container">
+             <div class="row">
+             	<div class="col-md-8">
+                    <div class="section1 text-center">
+						<div3>
+                          <h2>台灣特色火車站 </h2>
+                     	  	<!-- <h5>Featured Train Stations in  Taiwan</h5> -->
+                      </div3>
+    				  </div>
+                  </div>
+                
+                   
+                
+                 <div class="col-md-4">
+                    <div  class="item-small">
+                      <div3 style="position:fixed;left:800px;top:100px">
+                     	 <div2 style="position:absolute;width:400px"><img src="images/tw/tw-09.png">
+                 	     </div2>
+                         <div2 style="position:absolute;width:400px"><img src="images/tw/tw-10.png">
+                 	     </div2>
+                         <div2 style="position:absolute;width:400px"><img src="images/tw/tw-11.png">
+                 	     </div2>
+                         <div2 style="position:absolute;width:400px"><img src="images/tw/tw-12.png">
+                 	     </div2>
+                         <div3 style="position:absolute;width:400px"><img src="images/tw/tw-13.png">
+                 	     </div3>
+                         <div3 style="position:absolute;width:400px"><img src="images/tw/tw-14.png">
+                 	     </div3>
+                         <div3 style="position:absolute;width:400px"><img src="images/tw/tw-15.png">
+                 	     </div3>
+                         <div3 style="position:absolute;width:400px"><img src="images/tw/tw-16.png">
+                 	     </div3>
+                      </div3>
+                    </div> <!-- /tw pic-->
+                </div>
+                
+              </div>
+          </div3>
+       </div>
+        
+   </div>
+<!-- 台灣 end--> 
+    
+<!--northen-->     
+<div id="n" class="content-section">         
+       <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div3 style="opacity:0" class="item-small">
+                        <img src="images/tw-01.png">
+                    </div3> <!-- /tw pic-->
+                </div> <!-- /.col-md-3 -->
+                
+                
+           <div class="section" > 
+                <div class="col-md-8">
+                    <div class="section2">
+                        <h3>北部特色火車站 </h3>
+                  </div>
+                  </div>
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        <h4> 基隆 </h4> <h5><a href="#七堵">七堵車站</a> </h5> 
+                        <h4> 台北</h4> <h5><a href="#新北投">新北投車站</a> <br><a href="#菁桐">菁桐車站</a><br> <a href="#台北">台北車站</a> <br> <a href="#山佳">山佳車站</a><br>
+                        <a href="#台中">台中車站</a></h5> 
+                        
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        
+                        <h4> 新竹</h4> <h5><a href="#竹東">竹東車站</a> <br><a href="#合興">合興車站</a><br> <a href="#內灣">內灣車站</a> <br> <a href="#新竹">新竹車站</a><br>
+                        <a href="#香山">香山車站</a></h5>
+                        <h4> 苗栗</h4> <h5><a href="#談文">談文車站</a> <br> <a href="#大山">大山車站</a> <br> <a href="#新埔">新埔車站</a><br>
+                        <a href="#勝興">勝興車站</a></h5>
+                    </div> 
+                </div> 
+                
+                
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/n/circle1.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/n/circle2.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/n/circle3.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> <!-- /.col-md-3 -->
+    
+    			<div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/n/circle4.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/n/circle5.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/n/circle6.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> <!-- /.col-md-3 -->   
+                
+                </div>
+            </div>
+       </div> 
+</div>
+    
+
+<!--center-->
+    
+<div id="c" class="content-section">         
+       <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div3 style="opacity:0" class="item-small">
+                    <img src="images/tw-01.png">    
+                    </div3> <!-- /tw pic-->
+                </div>
+                
+            <div class="section" >    
+                <div class="col-md-8">
+                    <div class="section2">
+                        <h3>中部特色火車站 </h3>
+                  </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        <h4> 台中 </h4> <h5><a href="#日南">日南車站</a> <br><a href="#大甲">大甲車站</a><br> <a href="#清水">清水車站</a> <br> <a href="#追分">追分車站</a><br>
+                        <a href="#保安">台中車站</a></h5> 
+                        <h4> 彰化</h4> <h5><a href="#彰化">彰化車站</a></h5> 
+                        <h4> 南投</h4> <h5><a href="#集集">集集車站</a><br> <a href="#車埕">車埕車站</a></h5> 
+                        
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        
+                        <h4> 雲林</h4> <h5><a href="#斗六">斗六車站</a></h5>
+                        <h4> 嘉義</h4> <h5><a href="#嘉義">嘉義車站</a> <br> <a href="#南靖">南靖車站</a></h5>
+                    </div> 
+                </div> 
+                
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive ">
+                        <img src="images/circle/c/circle1.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/c/circle2.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/c/circle3.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> 
+    
+    			<div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/c/circle4.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/c/circle5.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/c/circle6.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div>   
+                </div> <!--section-->
+                </div>
+                </div> 
+                </div> 
+
+
+<!--south-->
+
+    <div id="s" class="content-section">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-4">
+                    <div3 style="opacity:0" class="item-small">
+                    <img src="images/tw-01.png">    
+                    </div3> 
+                </div>
+                
+            <div class="section" >    
+                <div class="col-md-8">
+                    <div class="section2">
+                        <h3>南部特色火車站 </h3>
+                     </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        <h4> 台南 </h4> <h5><a href="#後壁">後壁車站</a> <br><a href="#台南">台南車站</a><br> <a href="#保安">保安車站</a></h5> 
+                        <h4> 高雄</h4> <h5><a href="#高雄">高雄車站</a><br> <a href="#竹田">竹田車站</a></h5> 
+                        
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                        
+                        <h4> 屏東</h4> <h5><a href="#枋山">枋山車站</a></h5>
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                       <img src="images/circle/s/circle1.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/s/circle2.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/s/circle3.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> <!-- /.col-md-3 -->
+    
+    			<div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/s/circle4.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/s/circle5.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/s/circle6.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> 
+          </div> <!--section-->
+          </div>
+          </div>
+                
+                   
+
+<!--east-->
+
+    <div id="e" class="content-section">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-4">
+                    <div3 style="opacity:0" class="item-small">
+                    <img src="images/tw-01.png">    
+                    </div3> <!-- /tw pic-->
+                </div> <!-- /.col-md-3 -->
+           
+             <div class="section" >         
+                <div class="col-md-8">
+                    <div class="section2">
+                        <h3>東部特色火車站 </h3>
+                    </div> 
+                </div> 
+                     
+                <div class="col-md-2 col-sm-6 col-xs-6" >
+                    <div class="section-words2">
+                        <h4> 宜蘭 </h4> <h5><a href="#宜蘭">宜蘭車站</a> <br><a href="#頭城">頭城車站</a><br></h5> 
+                        <h4> 花蓮</h4> <h5><a href="#花蓮">花蓮車站</a><br> <a href="#吉安">吉安車站</a><br> <a href="#豐田">豐田車站</a><br><a href="#玉里">玉里車站</a></h5>
+                        </h5>
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="section-words2">
+                    <h4>台東</h4> <h5> <a href="#台東">台東車站</a><br><a href="#太麻里">太麻里車站</a><br><a href="#知本">知本車站</a></h5>
+                    </div> 
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/e/circle1.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/e/circle2.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/e/circle3.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-2 col-sm-6 col-xs-6">
+                    <div class="item-small">
+                        <div class="section3 img-responsive">
+                        <img src="images/circle/e/circle4.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/e/circle5.png"alt="circle1" usemap="#circle1" />
+                        <img src="images/circle/e/circle6.png"alt="circle1" usemap="#circle1" />
+                        </div>
+                    </div>
+                </div> 
+    
+    			</div> <!--section-->
+           </div>      
+       </div>
+     </div>  
+       
+    <!-- 北部週邊車站站-----------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+<div class="content-section">
+    <div class="container">
+    <section class="section4 clearfix"> 
+          <div class="row">
+             <div class="section">
+               
+             <!--左-->
+             <div class="col-md-6">
+             
+             <div class=" clearfix pinned">
+            	<div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="section4 ">
+                        <h3>北部特色火車站 </h3> 
+                    </div>
+                    <div class="section-pic">
+                        <img src="images/north-greenword.png"> 
+                    </div> <!-- /east pic-->
+               </div>
+               
+               <div class="col-md-2 col-sm-4 col-xs-4 section4">
+                    <div class="dashed">
+                        <h5> 基隆 <br> 台北<br><br><br><br><br> 新竹 <br><br><br><br>苗栗<br><br><br><br></h5>
+                    </div>
+                </div>
+                
+                    <div class="col-md-4 col-sm-8 col-xs-8 section4 clearfix">
+                        <h5> <a href="#七堵">七堵車站</a> <br><a href="#新北投">新北投車站</a> <br> <a href="#菁桐">菁桐車站</a> <br><a href="#台北">台北車站</a><br> <a href="#山佳">山佳車站</a><br><a href="#竹東">竹東車站</a><br> <a href="#合興">合興車站</a><br> <a href="#內灣">內灣車站</a><br><a href="#新竹">新竹車站</a><br><a href="#談文">談文車站</a><br> <a href="#大山">大山車站</a><br> <a href="#新埔">新埔車站</a><br><a href="#勝興">勝興車站</a><br>
+                         
+                        </h5>
+                </div> 
+              
+            </div><!--pinned--> 
+            </div>  
+                
+                
+              
+<!--右 -->     
+                
+               <div class="col-md-6 scroll">
+                 <div class="item-small">
+                 
+<!--七堵車站 -->
+                     <div class="section5" id="七堵">
+                        <h3>七堵火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6  col-sm-6 img-responsive" >
+                         <img src="images/Scenery/n/1-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>七堵車站（舊前站站房；已廢止）</h4>
+                        <p>位置｜臺灣基隆市七堵區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站，也是西部幹線對號列車的主要始發站，站區包括七堵調車場。七堵火車站前站屋根綜合切妻及入母屋兩種屋根特色的非對稱形式。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6  col-sm-6 img-responsive">
+                        <img src="images/Scenery/n/1-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>奠濟宮</h4>
+                        <p>位置｜基隆市仁愛區仁三路27-2號<br/>簡介｜宮內主祀的是開漳聖王陳元光將軍，並奉祀各方神明，經年累月總是有著一批又一批的信眾前往膜拜，而另外值得一提的是，在其廣場前的各式攤販小吃，更能讓來此地的饕客一滿口腹之慾。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5  col-sm-6 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/1-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>七堵泰安瀑布、姜子寮步道</h4>
+                        <p>位置｜基隆市七堵區泰安路<br/>
+簡介｜瀑高約20公尺，自山壁傾瀉而下，聚成一泓清潭。過泰安瀑布後喜健行者可改徒步走產業道路上山。姜子寮山登山口在產道終點的左邊，而產道右邊另有小路不遠就設有觀景台，可環顧清翠草木，傾聽蟲鳴鳥叫，此山林之樂也！</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5  col-sm-6 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/1-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>瑪陵坑溪、友蚋</h4>
+                        <p>位置｜基隆市七堵區<br/>
+簡介｜友蚋溪與瑪陵溪屬基隆河支流，兩溪僅一山之隔，而成兩處幽境。友蚋溪潭水較深，猶如一座迷你的天然游泳池，常可見當地孩童悠遊於此，充滿了嬉笑與歡樂。</p>
+                        </div>
+                     </div> 
+                     
+ <!--新北投車站 -->
+                     <div class="section5" id="新北投">
+                        <h3>新北投火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/2-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>新北投車站（已廢止）</h4>
+                        <p>位置｜臺灣臺北市北投區<br/>簡介｜為臺灣鐵路管理局新北投線（現已廢止）的端點站。拆除後重建車站於彰化臺灣民俗村內；經多方爭取車站建築產權所有人將車站捐贈臺北市政府，預計2016年重新開放。車站建築設計沿襲日本風格，是國內僅存典型日式車站建築。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/2-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>北投溫泉博物館</h4>
+                        <p>位置｜臺北市北投區中山路二號<br/>簡介｜西元1913年，興建了北投溫泉公共浴場，戰後，公共浴場因管理單位更迭，而終至荒廢，1998年在地方熱心居民的奔走下，經過臺北市政府的斥資整修，以「北投溫泉博物館」為定位，正式重新開放使用。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/2-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>凱達格蘭文化館</h4>
+                        <p>位置｜臺北市北投區中山路3-1號<br/>
+簡介｜文化館之所以成立於北投，主要是因為400多年前，這裡正是凱達格蘭族的族地，凱達格蘭文化館是全國第一座以原住民為主體的文化藝術及教育研習中心，傳承都市原住民文化、語言、歷史、藝術之要所。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/2-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>地熱谷</h4>
+                        <p>位置｜臺北市北投區中山路<br/>
+簡介｜位在北投溫泉公園旁邊，是北投溫泉的源頭之一，因為終年瀰漫著硫磺煙霧，讓人聯想到恐怖的地獄，所以又被稱為「地獄谷」或「鬼湖」，是日據時代臺灣八景十二勝之一。</p>
+                        </div>
+                     </div>                     
+                     
+   <!--菁桐車站 -->
+                     <div class="section5" id="菁桐">
+                        <h3>菁桐火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/3-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>菁桐車站</h4>
+                        <p>位置｜臺灣新北市平溪區<br/>簡介｜為臺灣鐵路管理局平溪支線鐵路的終點站。建於1929年，臺北縣政府文化局於2003年5月1日公告為古蹟。是所有車站中保留往日樣式最具古風的地方。站內有古樸的鐵道機具，是平溪地區最典型的礦業聚落。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/3-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>菁桐老街</h4>
+                        <p>位置｜新北市平溪區菁桐里<br/>簡介｜菁桐坑位於平溪區基隆河最上游，是平溪支線鐵路的終點。早期因石底煤礦與青桐煤礦的開發，外地移入許多礦工與職員，雖隨煤礦收坑停採而不復見當時熱鬧景象，但遺留的礦業聚落遺跡，卻成為拍攝鄉土劇的最佳場景。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/3-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>菁桐煤礦紀念公園</h4>
+                        <p>位置｜新北市平溪區菁桐街50號<br/>
+簡介｜位於菁桐火車站上方，是以前石底大斜坑廣場集中地，來此參觀可看到石塊切成的礦坑口，舊時由石底開鑿煤礦，經大斜坑集中運出的景象彷彿浮現在眼前。滿布茂盛的植物成了特殊的畫牆，漫步煤礦公園，彷彿回到百年前的菁桐。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/3-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>臺陽礦業公司平溪招待所</h4>
+                        <p>位置｜新北市平溪區菁桐街167號<br/>
+簡介｜日治時期又名石底俱樂部，是新北市少數保存完整的礦業文化資產，為和洋折衷的日式木構造建築，主要材料為杉木與臺灣檜木，建築內部裝飾不論材質或做工皆相當講究，極具建築藝術價值。</p>
+                        </div>
+                     </div>                  
+                     
+<!--臺北車站 -->
+                     <div class="section5" id="台北">
+                        <h3>臺北火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/4-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>臺北車站</h4>
+                        <p>位置｜臺灣臺北市中正區<br/>簡介｜為臺灣鐵路管理局縱貫線、臺灣高速鐵路、臺北捷運的鐵路車站，也是臺北捷運板南線、淡水線的交會車站，乃三鐵共構的地下車站。建築主體係仿中式傳統建築設計，也被戲稱為「披薩屋」。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/4-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>陽明山國家公園</h4>
+                        <p>位置｜臺北市陽明山竹子湖路1-20號<br/>簡介｜以火山地形與豐富地熱資源而聞名於世的陽明山，擁有四季皆美，變幻無方的山光水色，不論是溫泉、山景、自然生態等觀光資源，當中任一個項目便足以成為讓遊客絡繹不絕的誘因。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/4-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>中正紀念堂</h4>
+                        <p>位置｜臺北市中正區中山南路21號<br/>
+簡介｜本基地歷經清代、日治及民國50年代相近用途與相關舊地名旭町、營邊段…等均顯示為軍事設施，迄今整體範圍均仍維持當時相同規模；爾後中正紀念堂之建立，地名再改為中正段範圍仍未改變，到現在亦有一定歷史意義。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/4-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>國立故宮博物院</h4>
+                        <p>位置｜臺北市士林區至善路二段221號<br/>
+簡介｜簡稱故宮、故宮博物院或臺北故宮，又名中山博物院，是中華民國規模最大的博物館，同時也是世上最負盛名的中國藝術品集中地，藏品數量超過69.6萬件冊。為世界著名博物館之一。</p>
+                        </div>
+                     </div>                  
+  <!--山佳車站 -->
+                     <div class="section5" id="山佳">
+                        <h3>山佳火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/5-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>山佳車站（舊站房；封閉整修中）</h4>
+                        <p>位置｜臺灣新北市樹林區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站，為新北市市定古蹟。構造採磚造牆身、洋式木屋架、鋼筋混凝土（R.C.）楣樑、屋面覆「安全瓦」，為總督府鐵道部營繕部門首批以磚、R.C.、木構造混用的站房。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/5-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>蓋淡坑遺址</h4>
+                        <p>位置｜新北市樹林區信和街49巷底<br/>簡介｜位在山佳車站後方的信和街，仍保留大豐煤礦蓋淡坑遺址，坑口還有當年的值班表、礦工帽、十字鎬、台車及礦工們入坑前，都會前往參香的土地公廟；前樹林市長何玉枝也在坑外設置「蓋淡坑史誌」石碑，供人憑弔紀念。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/5-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>香草精靈休閒農場</h4>
+                        <p>位置｜新北市樹林區柑園街二段418巷11號<br/>
+簡介｜香草精靈佔地二千餘坪，並種植多種香草及自行提煉“精油”和“純露”，還有千坪庭園景觀、免費停車場和浪漫溫馨的地中海式餐廳，可享受到道地法式美食，新鮮的香草飲料及舒適、悠閒的田園風光。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/5-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>山佳河濱公園</h4>
+                        <p>位置｜新北市樹林區環河路<br/>
+簡介｜河濱公園內有田徑場、棒球場、壘球場、模型遙控汽車比賽場、自行車專屬車道、運動休閒步道等設施，讓愛好休閒運動的朋友多一個好去處。</p>
+                        </div>
+                     </div>                     
+                     
+ <!--竹東車站 -->
+                     <div class="section5" id="竹東">
+                        <h3>竹東車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/6-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>竹東車站</h4>
+                        <p>位置｜臺灣新竹縣竹東鎮<br/>簡介｜為臺灣鐵路管理局內灣線的鐵路車站。站房在1947年完工啟用，中間經過整修擴建，已有65年以上的歷史。站房古早味十足，有紅色屋瓦、磚牆、木窗格、雨遮和圓形樑柱。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/6-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>蕭如松藝術園區</h4>
+                        <p>位置｜新竹縣竹東鎮三民街60號	<br/>簡介｜「蕭如松故居」不但是蕭氏過去儲放個人物品之私人空間，同時也孕育其藝術生命的重要溫床。宏觀地說：「蕭如松故居」這個空間，視為儲存著大量屬於竹縣人記憶的共同空間。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/6-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>樹杞林文化館</h4>
+                        <p>位置｜新竹縣竹東鎮新生路377號<br/>
+簡介｜竹東鎮公所以社區營造的精神，結合藝文表演、展覽、教育活動及社區集會等規畫出「樹杞林地方文化館」，塑造本館為竹東的文化會館。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/6-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>竹東河濱公園</h4>
+                        <p>位置｜新竹縣竹東鎮雞林里東林路196號<br/>
+簡介｜「竹東河濱公園」保留了相當完整的自然生態，設有許多運動場與運動設施，整合遊憩、生態、自然淨化功能，建構一處兼具水質淨化、環境保育、觀光休閒的帶狀綠色廊道。</p>
+                        </div>
+                     </div>                               
+                     
+                     
+ <!--合興車站 -->
+                     <div class="section5" id="合興">
+                        <h3>合興車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/7-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>合興車站</h4>
+                        <p>位置｜臺灣新竹縣橫山鄉<br/>簡介｜為臺灣鐵路管理局內灣線的鐵路車站。為磚造黑瓦的日式建築，也是內灣線唯一的木造車站。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/7-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>豐鄉瀑布遊憩區</h4>
+                        <p>位置｜新竹縣橫山鄉新興村十鄰新興街110號	<br/>簡介｜落於橫山鄉豐鄉村，高度約10公尺，終年清澈流水潺潺不斷，瀑布下方清澈水潭倒映周邊岩壁的蒼翠綠蔭，伴隨涓涓水流聲，一幅清新美景頓時讓人忘卻煩憂，悠然自在。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/7-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>騎龍古道</h4>
+                        <p>位置｜新竹縣橫山鄉豐鄉村80號<br/>
+簡介｜騎龍古道途中經過三座糯米古橋、楊家石柱屋、百年石階、伯公廟、翠綠的孟宗竹林、筆直的柳杉造林、潺潺小溪，是景點十分豐富的一條步道。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/7-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>萬瑞森林樂園</h4>
+                        <p>位置｜新竹縣橫山鄉橫山村23鄰23號<br/>
+簡介｜萬瑞森林樂園位於大山背山山麓，海拔六百六十公尺，面積約38甲。既有天然景觀圍繞，又有油羅溪環繞於旁，風景宜人秀麗，是全國唯一臨近都會區的原始森林樂園。在此遠眺，可縱觀新竹市全景。</p>
+                        </div>
+                     </div>                               
+                                          
+                     
+ <!--內灣車站 -->
+                     <div class="section5" id="內灣">
+                        <h3>內灣車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/8-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>內灣車站</h4>
+                        <p>位置｜臺灣新竹縣橫山鄉<br/>簡介｜為臺灣鐵路管理局內灣線的鐵路車站。站房頗有50年代風格，正面繪有劉興欽的大嬸婆圖案與一首七言詩。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/7-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>內灣吊橋</h4>
+                        <p>位置｜新竹縣橫山鄉內灣村之東方	<br/>簡介｜清澈的油羅溪從尖石山區沿者曲折的山谷順流而下，溪水淙淙，無論是戲水或釣魚皆適合也都很受當地或外來客歡迎，而著名的內灣吊橋就懸於兩岸之間，每逢假日橋下釣魚烤肉的人潮源源不絕。 </p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/8-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>橫山采風館</h4>
+                        <p>位置｜新竹縣橫山鄉內灣村大同路99號<br/>
+簡介｜位於內灣火車站附近，原是遊客中心，後來改建為文物館，展示了許多傳統客家農莊文物、古早味的臺灣早期生活用品，一樓則是舞臺餐廳，讓人既可用餐還可懷念早期純樸生活。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/8-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>內灣老街</h4>
+                        <p>位置｜新竹縣橫山鄉內灣村中正路<br/>
+簡介｜以懷舊的老街情懷帶動觀光，包含古色古香的內灣車站、內灣戲院及內灣吊橋等新竹旅遊景點，內灣老街除了傳統街屋建築外，還有那漫畫家劉興欽博物館，作者筆下親切的大嬸婆與阿三哥、淘氣機器人等都可以在此看到。
+</p>
+                        </div>
+                     </div>                               
+                                          
+                                          
+<!--新竹車站 -->
+                     <div class="section5" id="新竹">
+                        <h3>新竹車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/9-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>新竹車站</h4>
+                        <p>位置｜臺灣新竹市市區中心<br/>簡介｜為臺灣鐵路管理局縱貫線、內灣線的鐵路車站。六家線亦以此站為折返點。其最具特色建築就在於它的鐘塔與全台獨具一格盔甲式造型，還有內外小山牆設計，讓空間有延伸感。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/9-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>新竹都城隍廟</h4>
+                        <p>位置｜新竹市北區中山里中山路75號<br/>簡介｜位於新竹市北區中山路上，列屬二級古蹟，其廟宇規模在當時是全臺灣之最，專門掌管陰間與陽間賞罰善惡的神明為城隍，所以城隍廟的佈置猶如古代的衙門；新竹都城隍廟廟埕的巿集小吃攤，成為新竹特色之一。 </p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/9-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>十七公里海岸風景區</h4>
+                        <p>位置｜新竹市北區南寮街<br/>
+簡介｜十七公里海岸風景區規劃新竹漁港娛樂漁船碼頭、看海公園、海天一線看海區、港南運河、風情海岸、紅樹林公園、海山漁港觀景台、南港賞鳥區等八大區，成為全臺灣知名的觀光休閒勝地。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/9-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>十八尖山公園</h4>
+                        <p>位置｜新竹市東區博愛街(東區入口)<br/>
+簡介｜位於新竹市東區，是日治時代所開闢的森林公園，略呈「新月形」，蜿蜒約7、8里，恰好環抱新竹市東、南郊。這十八尖山的得名，是由十八個淺峰山頭連綿而成的丘陵地帶因而得名。
+</p>
+                        </div>
+                     </div>                               
+                                                             
+<!--香山車站 -->
+                     <div class="section5" id="香山">
+                        <h3>香山車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/10-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>香山車站</h4>
+                        <p>位置｜臺灣新竹市香山區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站，目前為新竹市市定古蹟。建於昭和三年（西元1928年），是典型「入母屋造式」的木造建築。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/10-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>香山天后宮</h4>
+                        <p>位置｜新竹市中華路五段420巷191號<br/>簡介｜興建於明永曆十五年(西元1661年)，廟宇已經有三百四十餘年的歷史，經歷過多次整修，香山天后宮後殿高掛的「靈昭海國」古匾，是光緒丙子孟冬穀旦(西元1876年)，郊戶金長和敬立，為廟宇收藏的歷史文物之一。 </p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/10-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>新竹海山漁港</h4>
+                        <p>位置｜新竹市香山區<br/>
+簡介｜海山漁港有大片的海埔新生地，市府在此規劃休閒碼頭，加設護欄及座椅等設施成為海釣平台，提高海釣活動的安全性。這裡也是「藍色海路」的一端，休閒碼頭可以讓民眾登船享受乘風破浪的快感。 
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/10-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>香山濕地</h4>
+                        <p>位置｜新竹市香山區<br/>
+簡介｜位於臺灣新竹市海岸，新竹市以南到與竹南交界處，北起金城湖附近，南至海山漁港的海岸泥灘，全長15公里，面積達1,600公頃，2001年公告為新竹市濱海野生動物保護區。
+</p>
+                        </div>
+                     </div>                               
+                                                      
+                     
+                                                             
+<!--談文車站 -->
+                     <div class="section5" id="談文">
+                        <h3>談文車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/11-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>談文車站</h4>
+                        <p>位置｜臺灣苗栗縣造橋鄉<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站，現為苗栗縣定歷史建築。為和洋混合樣式建築，車站主體屋頂為二披水形式（切妻式洋小屋），屋脊皆呈Ｌ形，由垂直二向「切妻屋根」所組成。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/11-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>將軍鮮乳觀光工廠</h4>
+                        <p>位置｜苗栗縣造橋鄉朝陽村中洲仔一八號<br/>簡介｜將軍鮮乳是國產鮮乳的老字號。這些年經苗栗縣農會的大力推廣，已轉型為觀光工廠，不但可以看到鮮乳的製作過程，更可以品嚐到最純最新鮮的乳製品，一入園人手一支濃郁香甜的牛奶冰棒，是來到這裡不可不嚐的道地美味。 </p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/11-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>紅樹林生態環境保護區</h4>
+                        <p>位置｜苗栗縣竹南鎮<br/>
+簡介｜該樹林於港墘里塭仔頭中港溪出海口處，與河溝交會的地方。早在三十餘年前，鎮公所為配合兩岸堤防維護，將散生於岸邊泥土中的水筆仔移植於現處，迄今樹林叢生，對護岸的功能幫助不少。 
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/11-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>竹南蛇窯</h4>
+                        <p>位置｜苗栗縣竹南鎮公館里7鄰大埔頂7號<br/>
+簡介｜「竹南蛇窯」以「高溫柴燒」為一大特色，將「土」、「灰」、「火」三元素做了全新的詮釋，可以說開創了臺灣柴燒陶美感的新境界。
+「竹南蛇窯」，在傳統陶工藝與現代陶藝之間，堅持走出一條自己本土道路。
+</p>
+                        </div>
+                     </div>                               
+                                                      
+ 廟宇，寺廟中也有許多年代久遠的歷史文物，包括乾隆時期的古供桌與印有光緒皇帝宮印的「與天同功」匾額，相當具有歷史文化價值。
+</p>
+                                                                                  
+<!--大山車站 -->
+                     <div class="section5" id="大山">
+                        <h3>大山車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/12-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>大山車站</h4>
+                        <p>位置｜臺灣苗栗縣後龍鎮<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站，目前為苗栗縣定歷史建築。建築無繁複之裝飾語彙，其建築立面簡潔，僅作線狀之垂直水平分割。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/12-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>慈雲宮</h4>
+                        <p>位置｜苗栗縣後龍鎮三民路120號<br/>簡介｜建於清乾隆三十五年，為後龍鎮歷史最為悠久的  </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/12-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>外埔漁港</h4>
+                        <p>位置｜苗栗縣後龍鎮海埔巷13-5號<br/>
+簡介｜外埔漁港位在後龍鎮的海埔里，自民國六十五年開始經過多次的擴建，成為苗栗地區最具規模的第三類漁港，目前漁港內的設施有漁貨拍賣場、給水站、儲油庫與製冰冷凍庫等。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/12-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>臺灣水牛城</h4>
+                        <p>位置｜苗栗縣後龍鎮龍坑里17鄰十班坑181-11號<br/>
+簡介｜臺灣水牛城原為後龍觀光運河，園主因對臺灣早期農業社會的水牛有著濃厚的情感，因此將此地打造成一處以水牛為主題的觀光農業園區。</p>
+                        </div>
+                     </div>                               
+                                                      
+                                                                                
+
+<!--新埔車站 -->
+                     <div class="section5" id="新埔">
+                        <h3>新埔車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/13-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>新埔車站</h4>
+                        <p>位置｜臺灣苗栗縣通霄鎮<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站，也是西部幹線離海最近的車站，目前為苗栗縣定歷史建築。外觀立面為和洋風半木構造建築形式。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/13-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>秋茂園</h4>
+                        <p>位置｜苗栗縣通霄鎮通灣里20號<br/>簡介｜「通霄秋茂園」位在通霄鎮西北方新埔里，臨近海濱沙灘區，園區內隨處可見滿地海沙、貝殼及象徵園主黃秋茂孩提生活寫照的牛和牧童塑像，風景幽雅別致。
+ </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/13-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>通宵海水浴場</h4>
+                        <p>位置｜苗栗縣海濱路41-1號<br/>
+簡介｜通霄海水浴場位於苗栗縣通霄鎮海濱路的西濱海洋生態園區內，原名虎嶼浴場，於日據時期是專供日本高級官員們做渡假用的休閒浴場，目前是全臺灣規模最大的海水浴場。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/13-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>幸福農場</h4>
+                        <p>位置｜苗栗縣通霄鎮通灣里６鄰５８號<br/>
+簡介｜因為愛狗與愛自由，所以開闢了這座假日休閒咖啡店，也希望美食與舒適環境給各位帶來幸福感！</p>
+                        </div>
+                     </div>                               
+  
+<!--勝興車站 -->
+                     <div class="section5" id="勝興">
+                        <h3>勝興車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/n/14-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>勝興車站</h4>
+                        <p>位置｜臺灣苗栗縣三義鄉<br/>簡介｜為臺灣鐵路管理局臺中線（舊線）的鐵路車站，後因鐵路改線而裁撤，現為苗栗縣著名觀光景點。其特殊的建築結構在於這座日式木造站房，樑柱銜接完全不用鐵釘，雖歷經九十餘年寒暑尚能原貌呈現，是台灣老式車站之典範。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/n/14-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>魚藤坪斷橋</h4>
+                        <p>位置｜苗栗縣三義鄉龍騰村<br/>簡介｜位於苗栗縣三義鄉龍騰村，又稱為龍騰斷橋或糯米橋，因為在1935年歷經關刀山大地震，因此只剩下橋墩供遊客欣賞，雖然無法看到龍騰斷橋昔日的完整風貌，但遺留下來的橋墩也具有別種風情，成為龍騰斷橋的最大特色所在。
+ </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/14-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>西湖渡假村</h4>
+                        <p>位置｜苗栗縣三義鄉西湖村西湖11號<br/>
+簡介｜西湖渡假村是一處美麗精緻的遊樂區， 位於苗栗縣三義鄉，剛好在高速公路出口，交通方便堪稱遊樂區之冠。西湖渡假村景觀以歐式宮廷花園為主，整座花園的氣勢讓人讚嘆不已。
+</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/n/14-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>三義木雕博物館</h4>
+                        <p>位置｜苗栗縣廣盛村廣聲新城88號<br/>
+簡介｜以發揚木雕為主，兼負木雕蒐集、典藏、展示、研究、推廣，並促使主題特色獲得維護、傳續、發揚與創新，成為生生不息，不斷成長的博物館。</p>
+                        </div>
+                     </div>                               
+                                                                                        
+                                                  
+                     
+                     
+         </div>                     
+    </div> <!--右 -->
+    
+	</div> <!--section-->     
+ </div>
+ </section>
+ </div>
+ </div>
+
+
+<!-- 中部週邊車站-----------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+<div class="content-section">
+    <div class="container">
+      <section class="section4 clearfix"> 
+          <div class="row">
+             <div class="section">
+     
+     <!--左-->
+             <div class="col-md-6">
+             <div class="clearfix pinned">
+             
+            		<div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="section4">
+                        <h3>中部特色火車站 </h3> 
+                    </div>
+                    <div class="section-pic">
+                        <img src="images/mid-greenword.png"> 
+                    </div> <!-- /center pic-->
+               	</div>
+
+                	<div class="col-md-2 col-sm-4 col-xs-4 section4">
+                    <div class="dashed">
+                        <h5> 台中 <br><br><br><br><br> 彰化<br> 南投<br><br>雲林<br>嘉義<br><br></h5>
+                    </div>
+                </div>
+                
+               <div class="col-md-4 col-sm-8 col-xs-8 section4">
+                        <h5> <a href="#日南">日南車站</a> <br><a href="#大甲">大甲車站</a> <br> <a href="#清水">清水車站</a> <br><a href="#追分">追分車站</a><br> <a href="#台中">台中車站</a><br><a href="#彰化">彰化車站</a><br> <a href="#集集">集集車站</a><br> <a href="#車埕">車埕車站</a><br> <a href="#斗六">斗六車站</a><br><a href="#嘉義">嘉義車站</a><br><a href="#南靖">南靖車站</a><br>
+                        </h5>
+               </div> 
+            </div><!--pinned-->
+            </div><!--col-md-6-->
+ 
+                              
+<!--右 -->     
+                
+               <div class="col-md-6 scroll">
+                 <div class="item-small">
+                                
+        
+                <!--日南車站 -->  
+                <div class="section5" id="日南">
+                        <h3>日南車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/1-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>日南車站</h4>
+                        <p>位置｜臺灣臺中市大甲區<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站。在外觀上分為前後兩側，前側最大特色為不等邊屋頂，像極了被切掉一邊的房子，並在屋簷下設計有遮雨棚方便旅客等候。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/1-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>鐵砧山</h4>
+                        <p>位置｜臺中市大甲區成功路87號<br/>簡介｜鐵砧山位於臺中市大甲區東北方，總面積有五十多甲，山上地勢平坦呈平錐型，因其外貌形似鐵砧而得名，清領時期即以「鐵砧晚霞」名列臺灣十二景之一。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/1-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>向日葵休閒農場</h4>
+                        <p>位置｜臺中市大甲區建興里4鄰如意路27巷1之1號<br/>
+簡介｜向日葵休閒農場由舊豬寮改建，低矮的豬寮在俏皮的「諸事歡喜」和「豬你快樂」提字中，變身成古樸的空間；而向日葵形狀的陶鈴與可愛的向日葵娃娃正對著遊客笑瞇瞇，若你想幫它換上新裝，可以向櫃檯報名彩繪DIY。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/1-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>大甲三寶文化館</h4>
+                        <p>位置｜臺中市大甲區光明路67號<br/>
+簡介｜「大甲三寶文化館」位於裕珍馨旗艦店樓上，固定展示「大甲懷舊照片」、「大甲帽蓆編織場景」、「古早奶油酥餅製作場景」及十六尊「媽祖一生故事木雕」，並不定期舉文化藝術展。
+</p>
+                        </div>
+                     </div>
+                                   
+                <!--大甲車站 -->  
+                <div class="section5" id="大甲">
+                        <h3>大甲車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/2-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>大甲車站</h4>
+                        <p>位置｜臺灣臺中市大甲區<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站。站房主體有七個三角形的屋頂，形狀類似一波波的海浪，造型上頗吻合大甲海線車站的特色。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/2-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>鎮瀾宮</h4>
+                        <p>位置｜臺中市大甲區順天路158號<br/>簡介大甲鎮瀾宮，俗稱大甲媽祖宮、大甲媽祖廟，位於臺灣臺中市大甲區順天路158號，大甲火車站正前方200公尺處，主奉天上聖母媽祖，為臺灣媽祖信仰的知名廟宇之一。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/2-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>麗寶樂園</h4>
+                        <p>位置｜臺中市后里區安眉路115號<br/>
+簡介｜麗寶樂園原稱月眉育樂世界，位於臺灣臺中市后里區，是一座水上、陸上的主題樂園。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/2-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>文昌祠</h4>
+                        <p>位置｜臺中市大甲區文武路116號<br/>
+簡介｜「文昌祠」， 大甲人稱孔子廟，又稱文昌宮，創建於清光緒13年（即西元1887年）， 由大甲區鄉紳捐銀興建 ， 設義塾於左右兩廂房 ， 為當地崇揚文教之地 ， 並且是大甲最早學校 。
+</p>
+                        </div>
+                     </div>
+                                                
+                <!--清水車站 -->  
+                <div class="section5" id="清水">
+                        <h3>清水車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/3-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>清水車站</h4>
+                        <p>位置｜臺灣臺中市清水區<br/>簡介｜為臺灣鐵路管理局海岸線的鐵路車站。站房主體有七個三角形的屋頂，形狀類似一波波的海浪，造型上頗吻合大甲海線車站的特色。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/3-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>清水區農村文物館</h4>
+                        <p>位置｜臺中市清水區鎮政路101號<br/>簡介｜農友們將一些逐漸消失之慮的傳統農具及昔日農村生活物品提供出來，甚至有些可列為古董級的文物，也無償提供；這些被保留完整的農具和日常生活用品，見證了我們先民不凡的智慧和胼手胝足的開創精神。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/3-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>高美濕地</h4>
+                        <p>位置｜臺中市清水區<br/>
+簡介｜高美濕地（高美野生動物保護區）位於清水大甲溪出海口南側，面積廣達1,500公頃，擁有豐富的天然資源，是國內少數幾處雁鴨集體繁殖區之一。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/3-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>梧棲觀光漁港
+</h4>
+                        <p>位置｜臺中市清水區北堤路30號<br/>
+簡介｜臺中市第一座機漁船港，為發展中部地區漁業，並配合臺中港規劃所興建，水域及陸地範圍共計六十頃，港內規劃的漁業專區，可容納五十噸以下漁船三百艘。已轉形成集生產、銷售、觀光、娛樂唯一體的綜合性休閒漁港。
+</p>
+                        </div>
+                     </div>
+                                 
+  <!--追分車站 -->  
+                <div class="section5" id="追分">
+                        <h3>追分水車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/4-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>追分車站</h4>
+                        <p>位置｜臺灣臺中市大肚區<br/>簡介｜為臺灣鐵路管理局海岸線、成追線的鐵路車站。站體外圍被以木柱與木構件組成簷廊圍繞，為海線車站的特色。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/4-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>望高寮</h4>
+                        <p>位置｜臺中市大肚區遊園路二段<br/>簡介｜望高寮又稱「王田坎」，是大肚台地最高的一處山野，為一座大斷崖。站在眺望平台可以遠看臺中港區、彰化大肚溪以南平地、以及臺中市區，夜晚更可以看到三地萬家燈火的夜景。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/4-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>磺溪書院</h4>
+                        <p>位置｜臺中市大肚區文昌路60號<br/>
+簡介｜磺溪書院，立於光緒十二年。光緒－清朝倒數第二個皇帝，屬二進、雙護龍、七開間、四垂拜亭格局。清朝時，專收大度、龍井、烏日等地子弟，實施啟蒙教育。殿內供俸管功名的文昌帝君。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/4-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>成功車站</h4>
+                        <p>位置｜臺中市烏日區中山路三段550 號<br/>
+簡介｜成功車站位於臺灣臺中市烏日區，為臺灣鐵路管理局臺中線、成追線的鐵路車站。它與追分站間的車票恰是『追分成功』，許多面臨升學考試的學子，都會來這裡討張吉利車票。
+</p>
+                        </div>
+                     </div>
+                              
+                                 
+  <!--臺中車站 -->  
+                <div class="section5" id="台中">
+                        <h3>台中水車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/5-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>臺中車站</h4>
+                        <p>位置｜臺灣臺中市中區<br/>簡介｜為臺灣鐵路管理局臺中線的鐵路車站，站等為特等站；車站附近亦有多家公車和客運業者設站，絕多數市區公車皆於此處設站，是臺中最重要的交通轉運樞紐。為英格蘭紅磚造建築風格，環帶為白色假石。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/5-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>20號倉庫鐵道藝術網絡臺中站</h4>
+                        <p>位置｜臺中市西區復興路四段37巷6-1號<br/>簡介｜20號倉庫其實是指位於臺中火車站後站內，臺鐵原編號為第20號到第26號共七間的連棟貨運倉庫。為了讓鐵道注入新的生命、新的文化，於是將倉庫改造成藝術殿堂作為接待、展覽、跨領域藝文活動、辦公及休憩場所。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/5-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>柳原教會</h4>
+                        <p>位置｜臺中市中區興中街119號<br/>
+簡介｜柳原教會為1915年，Rev.Campbell N. Moody牧師提供的英國教會圖樣所興建，於1916年10月竣工。戰後，在舊教堂南側增建新聖殿，民國87 年又大興土木，完成地下停車場、主日學教室、辦公室、牧師館等。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/5-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>經國綠園道</h4>
+                        <p>位置｜臺中市西區北起科博館，經公益路、向上路、英才路，南至美術館<br/>
+簡介｜經國綠園道從自然科學博物館一直延伸至國立美術館，中間綿長的都市綠帶約長1.7公里，沿途綠草如茵、花團錦簇，四季皆有不同變化，是市民心中的「城市後花園」。
+</p>
+                        </div>
+                     </div>
+                                      
+ <!--彰化車站 -->  
+                <div class="section5" id="彰化">
+                        <h3>彰化車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/6-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>彰化車站</h4>
+                        <p>位置｜臺灣彰化縣彰化市<br/>簡介｜為臺灣鐵路管理局縱貫線、臺中線、海岸線的鐵路車站。外觀為混凝土造的三層樓新站，波浪狀的雨簷及六株聳立的大王椰子是其特色。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/6-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>彰化扇形車庫</h4>
+                        <p>位置｜彰化縣彰美路一段1號<br/>簡介｜東南亞唯一的火車頭旅館，位於彰化市彰美路旁，是全國僅存的火車庫，蒸汽機車火車頭於完成懷舊之旅後，進駐彰化扇形車庫，讓這座扇形車庫更具歷史和文化保存價值。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/6-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>永樂街形象商圈</h4>
+                        <p>位置｜彰化縣彰化市永樂街<br/>
+簡介｜永樂街除了統一規劃整齊的招牌，以及乾淨明亮的街道之外，更加入了許多現代流行的元素，因此吸引不少年輕族群前來購買。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/6-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>八卦山大佛風景區</h4>
+                        <p>位置｜彰化縣彰化市卦山路8-1號<br/>
+簡介｜為彰化縣最著名的地標與景點，順著卦山路進入大佛風景區的入口牌樓，莊嚴肅穆的三十二尊石雕觀音就豎立在兩旁，參佛大道的盡頭即是九龍池廣場，法相莊嚴的釋迦牟尼像是庇佑眾生般的端坐在此。
+</p>
+                        </div>
+                     </div>
+ 
+ 
+<!--集集車站 -->  
+                <div class="section5" id="集集">
+                        <h3>集集車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/7-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>集集車站</h4>
+                        <p>位置｜臺灣南投縣集集鎮<br/>簡介｜為臺灣鐵路管理局集集線的鐵路車站。建築架構為一日式型態，純檜木架構之車站建築。。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/7-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>集集鐵路文物博覽館</h4>
+                        <p>位置｜南投縣集集鎮民生路75號<br/>簡介｜原本此地為報廢倉庫，現今整修闢為鐵路文物展示館，讓集集鐵路之旅更具知性。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/7-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>明新書院
+</h4>
+                        <p>位置｜南投縣集集鎮永昌里東昌巷4號<br/>
+簡介｜光緒年前，先民將主神文昌帝君、至聖先師神牌奉祀於集集，有一日巡察竹山鎮後埔仔，經過草潭時，發現潭中有巨獸作怪，文昌帝君顯靈伏妖，此後就很平靜，之後先民為感念之就蓋廟紀念之。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/7-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>集集隧道</h4>
+                        <p>位置｜南投縣集集鎮<br/>
+簡介｜建於民國廿二年，座落於集集鎮「台十六線」草嶺腳段，外觀如拱形般，隧道內燈光明亮、清風微撲，是促成綠色隧道之景觀。
+</p>
+                        </div>
+                     </div>        
+                     
+<!--車程車站 -->  
+                <div class="section5" id="車埕">
+                        <h3>車程車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/8-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>車程車站</h4>
+                        <p>位置｜臺灣南投縣水里鄉車埕村<br/>簡介｜為臺灣鐵路管理局集集線的鐵路車站。由日月潭國家風景區管理處斥資整建，並以木材將站房加以包裝，同時擴建廣場鋪設木質地板，使其風貌轉為清新典雅。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/8-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>水里蛇窯陶藝文化園區</h4>
+                        <p>位置｜南投縣水里鄉頂崁村頂崁巷<br/>簡介｜水里蛇窯陶藝文化園區位於南投縣水里鄉頂崁村，於民國16年創立，於民國82年11月成立「水里蛇窯陶藝文化園區」，由原來的舊窯場改成，並強調「傳統與現代」結合，漸漸成為一處保存臺灣文化的園區。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/8-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>玉山國家公園
+</h4>
+                        <p>位置｜南投縣水里鄉中山路一段300號<br/>
+簡介｜是臺灣第二個國家公園，位於臺灣中心位置，範圍涵蓋南投縣、嘉義縣、高雄市和花蓮縣，總面積約達105490公頃，是臺灣面積最大的國家公園。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/8-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>林班道體驗工廠</h4>
+                        <p>位置｜南投縣水里鄉車埕村民權巷101-5號<br/>
+簡介｜位於水里車埕的林班道（中央廣場一樓），提供已裁切好的木材及DIY組合教學，讓遊客民眾從自已動手做中，去感受DIY所引發的樂趣，以及獨立完成的成就感，一處結合傳統手工技術及休閒娛樂的好去處，最適合闔家一同前往。
+</p>
+                        </div>
+                     </div>
+                     
+                     
+<!--斗六車站 -->  
+                <div class="section5" id="斗六">
+                        <h3>斗六車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/9-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>斗六車站</h4>
+                        <p>位置｜臺灣雲林縣斗六市<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站。月台上水果造型的候車椅，全是雲林當地水果，縣府人¬員表示，這些水果椅是配合農業博覽會所推出的，希望讓坐火車經過的民眾，對雲林農特產留下深刻的印象。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/9-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>太平老街</h4>
+                        <p>位置｜雲林縣斗六市太平路上 <br/>簡介｜太平老街從斗六圓環至斗六郵局為止，約600公尺，最大的特色是有80多棟日據時期巴洛克式的老洋房，其建築有個最受人注目的特色，就是假山牆，俗稱女兒牆。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/9-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>大同黑金醬油館
+</h4>
+                        <p>位置｜雲林縣斗六市斗工二路39號<br/>
+簡介｜創立之初是經營肉圓起家，因自製的醬油搭配肉圓，後常有顧客們特地購買醬油，漸漸的也打出知名度而自家庭式醬油房經營起，最後在1911年成立了「大同醬油」，並於2010年成立了觀光工廠-「大同黑金釀造館」。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/9-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>繪本圖書館</h4>
+                        <p>位置｜雲林縣斗六市莊敬路66號<br/>
+簡介｜斗六市繪本圖書館位於本市媽祖廟（受天宮）前斗六公園側邊，建築物總面積734m²。分為地下一層、地上一、二層每層樓地板面積約75坪。繪本圖書館型態以兒童圖書、繪本為主。
+</p>
+                        </div>
+                     </div>                                                                                                    
+<!--嘉義車站 -->  
+                <div class="section5" id="嘉義">
+                        <h3>嘉義車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/10-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>嘉義車站</h4>
+                        <p>位置｜嘉義市中山路528號<br/>簡介｜為中部及南部區間車重要發車站，為南部第二大車站（僅次於高雄）。建築式樣居折衷建築，為鋼筋混凝土結構，古典風格的對稱方式，簡化的山牆及幾何圖案裝飾，與水平簡潔的現代感，折衷地存在建築物中。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                         <img src="images/Scenery/c/10-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>中央噴水池</h4>
+                        <p>位置｜嘉義市中山路中段的圓環 <br/>簡介｜民國五十九年許世賢女士擔任市長時興建七彩的中央噴水池，池中恭鑄國父孫中山先生銅像，池內噴泉蘊含十四種變化，約每十五分鐘一輪迴，水高可及二十公尺，尤其夜間噴水時，五彩繽紛變化多端，美不勝收。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/10-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>仁義潭水庫
+</h4>
+                        <p>位置｜嘉義縣番路鄉新福村大庄28號之1<br/>
+簡介｜仁義潭水庫位於嘉義縣番路鄉八掌溪上游，屬離槽水庫，它是嘉義市及嘉義縣民雄地區公共給水及工業用水的主要來源，並具有調節蘭潭水庫貯水量的功能。
+</p>
+                        </div>
+                     </div>
+          			<div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/c/10-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>檜意生活村</h4>
+                        <p>位置｜嘉義市東區林森東路1號<br/>
+簡介｜28棟日式木造歷史建築群，不僅規劃錯落有致，深具和風情緻，並且在整個建築聚落中，設有公共澡堂的湯屋和招待所，滿足生活機能與商業功能的雙重結合，重現當年建村時的布局巧思。
+</p>
+                        </div>
+                     </div> 
+                     
+<!--南靖車站 -->  
+                	<div class="section5" id="南靖">
+                        <h3>南靖車站週邊景點 </h3>
+                  </div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/c/11-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>南靖車站</h4>
+                        <p>位置｜台灣嘉義縣水上鄉<br/>簡介｜本站為嘉義縣最南端的車站。早期日本時代為了南靖糖廠的聯絡，所以在把原來的水上車站遷來此，並取代水上車站的名稱，後來1949年在舊站位置恢復了水上車站，這個在糖廠旁的車站就改名叫南靖車站。
+<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                 	  </div><!--section6--> 
+                                          
+    </div> <!--右 -->
+	</div> <!--section-->     
+    </div> 
+    
+    </section>
+    </div>
+    </div>
+
+
+
+
+<!-- 南部週邊車站-------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+<div class="content-section">
+    <div class="container">
+    
+    <section class="section4 clearfix"> 
+          <div class="row">
+             <div class="section">
+               
+             <!--左-->
+             <div class="col-md-6">
+             
+             <div class=" clearfix pinned">
+
+            	<div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="section4">
+                        <h3>南部特色火車站 </h3> 
+                    </div>
+                    <div class="section-pic">
+                        <img src="images/south-greenword.png"> 
+                    </div> <!-- /east pic-->
+               </div>
+               
+                	<div class="col-md-2 col-sm-4 col-xs-4 section4">
+                    <div class="dashed">
+                        <h5> 台南<br><br><br> 高雄 <br><br> 屏東<br><br><br></h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-8 col-xs-8 section4">
+                        <h5> <a href="#後壁">後壁車站</a> <br><a href="#台南">台南車站</a> <br> <a href="#保安">保安車站</a> <br><a href="#高雄">高雄車站</a><br> <a href="#竹田">竹田車站</a><br><a href="#枋山">枋山車站</a>
+                         
+                        </h5>
+                </div>               
+            </div>
+            </div> 
+               
+<!--右 -->     
+                
+               <div class="col-md-6 scroll">
+                 <div class="item-small">
+ <!--後壁車站 -->  
+   
+                    <div class="section5" id="後壁">
+                        <h3>後壁火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/1-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>後壁車站</h4>
+                        <p>位置｜台灣臺南市後壁區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站。車站為傳統的木造建築，創建於光緒28年(西元1902年)，民國30年嘉南大地震使得站房傾斜，民國32年改建為現有樣式。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/1-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>阮家古厝</h4>
+                        <p>位置｜台南市後壁區墨林里4鄰菁寮191號<br/>簡介｜阮家古厝約有200年歷史，屬於街屋形式建築，歷經2次遷徙，3個家族，風華依舊，未曾被世人遺忘。整體建造完全由精密切割的木窗、樑柱、斗供接合而成，牆壁精美雕飾、彩繪層次明朗，是市內美麗的歷史建築之一。</p>
+                        </div>
+                     </div>
+                    
+ <!--台南車站 -->  
+
+                    <div class="section5" id="台南">
+                        <h3>台南火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/2-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>台南車站</h4>
+                        <p>位置｜臺灣臺南市東區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站。是少數建於清代舊城範圍內的車站。本站為一棟二層樓之建築，由前面之大廳棟，中間之候車棟及後面之月台所組。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/2-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>安平古堡</h4>
+                        <p>位置｜台南市安平區國勝路82號<br/>簡介｜於1633年內、外城均全部完工，整座城堡以糯米汁、糖漿、沙與牡蠣殼粉混合攪拌所建，現存的城牆殘壁，老榕盤根，無限滄桑，其中位於安平古堡的規模最大。</p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/2-3.jpg"class="img-responsive" alt="Responsive image" /> 
+                        </div>
+                      <div class="col-md-7">
+                        <h4>台南公園</h4>
+                        <p>位置｜台南市北區北門路二段<br/>簡介｜在臺南公園中，大小樹木有800多棵，喬、灌木植物約160種，而這些樹木之中有26種、78棵在民國九十六年（2007年）9月6日時被臺南市政府指定為「珍貴老樹」。</p>
+                        </div>
+                     </div>
+                      
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/2-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                      <div class="col-md-7">
+                        <h4>臺南孔子廟</h4>
+                        <p>位置｜台南市中西區南門路2號<br/>簡介｜亦稱臺南文廟，位於臺南市中西區，建於明鄭永曆十九年（西元1665年），是臺灣最早的文廟。清領初期一度是全臺童生入學之所，因此亦稱全臺首學。</p>
+                        </div>
+                     </div>
+<!--保安車站 -->  
+    				<div class="section5" id="保安">
+                        <h3>保安火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/3-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+
+                        <div class="col-md-7">
+                        <h4>保安車站</h4>
+                        <p>位置｜台灣臺南市仁德區<br/>簡介｜為臺灣鐵路管理局縱貫線的鐵路車站。站房用阿里山檜木構建而成，至今維持昔日樣貌，建築形式風格獨特、造形優雅，現被台鐵列為觀光車站，與永康車站以「永保安康」紀念車票蔚為風潮。</p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/3-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>奇美博物館</h4>
+                        <p>位置｜台南市仁德區三甲里59-1號<br/>簡介｜館內由西洋繪畫雕塑、樂器、古兵器、自然史、古文物等五個部門組成，豐富多樣，有西元前埃及文物、日本武士刀等世界各地文化精髓及珍藏，博物館以免門票方式來積極推廣藝術鑑賞，努力實現生活即藝術理想。</p>
+                        </div>
+                     </div>
+                     
+               
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/3-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                      <div class="col-md-7">
+                        <h4>仁德糖廠</h4>
+                        <p>位置｜台南市仁德區虎山路399號<br/>簡介｜位於臺灣臺南市仁德區田厝里，在臺灣日治時期為臺灣製糖株式會社的車路墘製糖所。該廠於2003年停工後，原有的辦公大樓及辦公室，由量販事業部、休閒遊憩事業部與台南區處等單位共用，十鼓擊樂團承租閒置場域成立了十鼓文化村。
+</p>
+                        </div>
+                     </div>
+<!--高雄車站 -->  
+
+                    <div class="section5" id="高雄">
+                        <h3>高雄火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/4-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>高雄車站</h4>
+                        <p>位置｜臺灣高雄市三民區<br/>簡介｜該站為縱貫線與屏東線的連接點，為高雄市中心最重要的鐵路車站，也是高雄都會區首要的交通轉運樞紐，為於臨時前站前方的高雄市公車火車站是多條公車線的起始站。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/4-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>高雄鐵路地下化展示館</h4>
+                        <p>位置｜高雄市三民區建國二路318號<br/>簡介｜交通部鐵路改建工程局運用舊高雄車站帝冠式站體展示鐵路地下化工程介紹，展出包括鐵路歷史圖片、實體鐵路文物等珍貴資料，為臺灣第一座鐵路地下化工程的展示館。</p>
+                        </div>
+                     </div>
+                     
+               
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/4-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                      <div class="col-md-7">
+                        <h4>駁二藝術特區</h4>
+                        <p>位置｜高雄市鹽埕區大勇路1號<br/>簡介｜2001年一群藝文界人士成立了駁二藝術發展協會，催生推動駁二藝術特區作為南部人文藝術發展的基地，將駁二規劃成一個獨特的藝術開放空間，提供藝術家及學生一個創作發表的環境，同時不定期的舉辦各類藝文活動。
+</p>
+                        </div>
+                     </div>
+                     
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/4-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                      <div class="col-md-7">
+                        <h4>國立科學工藝博物館</h4>
+                        <p>位置｜高雄市三民區九如一路720號<br/>簡介｜科工館以蒐藏及研究科技文物、展示與科技相關主題、推動科技教育和提供民眾休閒與終身學習為其主要功能，和台中的國立自然科學博物館、恆春的國立海洋生物博物館並稱台灣的三大科學博物館。
+</p>
+                        </div>
+                     </div>             
+<!--竹田車站 -->  
+
+                    <div class="section5" id="竹田">
+                        <h3>竹田火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/5-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>竹田車站</h4>
+                        <p>位置｜屏東縣竹田鄉<br/>簡介｜於西元1940年建造，至今已超過一甲子的歲月了，是一臺灣鐵路管理局屏東線上深具歷史價值的鐵路車站。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/s/5-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>竹田驛園</h4>
+                        <p>位置｜屏東縣竹田鄉履豐村豐明路27-1號<br/>簡介｜縱貫鐵路列車穿梭越過高屏溪，馳騁在廣闊的屏東平原，沿路可欣賞一片綠油油的田野風光，在途中有一座古樸且保存完善的日式和風木造老車竝，激起了無數民眾思古幽情的心境。</p>
+                        </div>
+                     </div>
+                     <!--枋山車站 -->  
+       
+                    <div class="section5" id="枋山">
+                        <h3>枋山火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/s/6-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>枋山車站</h4>
+                        <p>位置｜台灣屏東縣獅子鄉<br/>簡介｜為臺灣鐵路管理局南迴線的鐵路車站。本站也是目前台灣最南端的鐵路車站。屋頂有仿屋瓦的設計，建築極有特色。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                      
+               
+    </div>                     
+    </div> <!--右 -->
+	</div> <!--section-->     
+    </div> 
+    </section>
+    </div>
+    </div>
+   
+              
+                    
+                    
+            
+   
+       
+       
+         
+
+
+                
+
+<!-- 東部週邊車站-------------------------------------------------------------------------------------------------------------------------------------------------------------> 
+
+<div class="content-section">
+    <div class="container">    <section class="section4 clearfix"> 
+          <div class="row">
+             <div class="section"><!--啟動Scroll需修改Section 高度-->
+               
+             <!--左-->
+             <div class="col-md-6">
+             <div class=" clearfix pinned"> 
+            	<div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="section4">
+                        <h3>東部特色火車站 </h3> 
+                    </div>
+                    <div class="section-pic">
+                        <img src="images/east-greenword.png"> 
+                    </div> <!-- /east pic-->
+               </div>
+                
+               
+                
+              <!--中 pin part-->   
+             
+                	<div class="col-md-2 col-sm-4 col-xs-4 section4">
+                    <div class="dashed">
+                        <h5> 宜蘭 <br><br><br> 花蓮<br><br><br><br> 台東 <br><br><br><br></h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-8 col-xs-8 section4">
+                        <h5> <a href="#頭城">頭城車站</a> <br><a href="#礁溪">礁溪車站</a> <br> <a href="#宜蘭">宜蘭車站</a> <br><a href="#花蓮">花蓮車站</a><br> <a href="#吉安">吉安車站</a><br><a href="#豐田">豐田車站</a><br> <a href="#玉里">玉里車站</a><br> <a href="#台東">台東車站</a><br> <a href="#知本">知本車站</a><br><a href="#太麻里">太麻里車站</a><br>
+                         
+                        </h5>
+                </div> 
+              
+            </div>
+            </div>
+                
+                
+              
+<!--右 -->     
+                
+               <div class="col-md-6 scroll">
+                 <div class="item-small">
+                 
+
+                     
+                <!--頭城車站 -->  
+                  
+                   
+                    <div class="section5" id="頭城">
+                        <h3>頭城火車站週邊景點 </h3>
+                  	</div>
+                    <div class="section6 row">
+                        <div class="col-md-5 img-responsive" >
+                        <img src="images/Scenery/e/1-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>頭城車站</h4>
+                        <p>位置｜臺灣宜蘭縣頭城鎮<br/>簡介｜有島式月臺、岸式月臺各一座。1920年4月25日設“頭圍”驛。1948年6月16日改為“頭城”。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/1-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>頭城老街</h4>
+                        <p>位置｜台灣宜蘭縣和平街<br/>簡介｜頭城老街曾為繁華的的貨物集散中心，但後來因為日治時期大正十三年（1924年）的洪水影響了頭城港與陸運取代海運等因素而沒落。今在頭城老街上，有數座古跡與老廟，此外還有珍貴的老榕樹。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 col-sm-6 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/1-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>烏石港</h4>
+                        <p>位置｜宜蘭縣頭城鎮港口里港口路15-7號觀光漁港<br/>
+簡介｜港灣管理單位為農委會漁業署，將其為第一類漁港，烏石漁港自古就是臺灣東北部出入的門戶，現在和梗枋漁港及南方澳漁港並列宜蘭3大賞鯨觀光漁港。一年一度的頭城搶孤民俗活動，也是在此地舉辦。</p>
+                        </div>
+                     </div>
+                  
+                    
+        <!--礁溪車站 -->
+                     <div class="section5" id="礁溪">
+                        <h3>礁溪火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                        <img src="images/Scenery/e/2-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>礁溪車站</h4>
+                        <p>位置｜臺灣宜蘭縣礁溪鄉<br/>簡介｜為臺灣鐵路管理局宜蘭線的鐵路車站。有島式月臺、側式月臺各一座。溫泉造型的站名看板。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/2-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>礁溪溫泉</h4>
+                        <p>位置｜宜蘭縣礁溪鄉德陽村<br/>簡介｜屬於沉積岩區的溫泉，溫泉熱水儲存於四棱砂岩層(變質砂岩)的裂隙中，源頭是自第四紀沖積礫石層中湧出。水質清澈透明，可飲用，水溫約55℃，酸堿值pH7.8，碳酸根離子約297ppm，鈉離子約187ppm，是中性碳酸氫鈉泉。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/2-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>足湯</h4>
+                        <p>位置｜礁溪車站正前方<br/>
+簡介｜足湯指足部浸浴的溫泉。由於不必寬衣解帶，格外受到歡迎。在溫泉區，多設置在街角或泉源附近，亦有部分設於車站、公園等觀光客聚集處。</p>
+                        </div>
+                     </div>    
+                     
+           <!--宜蘭車站 -->
+                     <div class="section5" id="宜蘭">
+                        <h3>宜蘭火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/3-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>宜蘭車站</h4>
+                        <p>位置｜臺灣宜蘭縣宜蘭市<br/>簡介｜為臺灣鐵路管理局宜蘭線的鐵路車站。有島式月臺，岸式月臺各一座。本站創於民國7年，原為木造二層站房，民國51年（1962）遭歐珀（Opal）颱風侵襲倒塌。經改建為鋼筋混凝土建築物。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/3-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>幾米主題廣場</h4>
+                        <p>位置｜宜蘭市光復路1號(宜蘭火車站左側舊宿舍區)<br/>簡介｜幾米廣場的裝置藝術源自于幾米的作品，幾米繪本裡【向左走●向右走】中男、女主角往各自方向離去的場景，在廣場上都以一比一原貌重現，讓大人小孩都可以互動的公園。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/3-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>丟丟當森林</h4>
+                        <p>位置｜宜蘭市宜興路一段236號<br/>
+簡介｜丟丟當森林位於宜蘭火車站出門口的左前方，遠看貌似一座綠色森林，其實卻是一座鐵樹森林，一共有九株鐵樹，然而"鐵樹"又有著九芎樹的象徵，九芎城是宜蘭的舊名，讓旅客從火車站眺望，有著一股神秘又新鮮的綠建築。</p>
+                        </div>
+                     </div>        
+                     
+      <!--花蓮車站 -->
+                     <div class="section5" id="花蓮">
+                        <h3>花蓮火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/4-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>花蓮車站</h4>
+                        <p>位置｜臺灣花蓮縣花蓮市<br/>簡介｜為臺灣鐵路管理局北回線、臺東線的鐵路車站。借著花東鐵路電氣化及花東車站效能提升計畫，改建為跨站式車站。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/4-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>慈濟文化園區</h4>
+                        <p>
+                        位置｜花蓮市中央路三段701至707號<br/>簡介｜慈濟文化園區佔地寬廣，空間佈局充滿素雅綠意寧靜，如同古語「結廬在人間，而無車馬喧」，是花蓮市最具禪意及享受休閒的地方。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/4-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>十六股延平王廟</h4>
+                        <p>位置｜花蓮市國強裡豐村5鄰72號<br/>
+簡介｜昔日稱復興宮，自清朝咸豐元年創廟至今，已有150年歷史，為花蓮最早興建的廟宇，廟址位於十六股莊（豐村）中心點，可說是花蓮市歷史的起點。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/4-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>花蓮市聖天宮</h4>
+                        <p>位置｜花蓮市進豐街98號<br/>
+簡介｜主祀關聖帝君，花蓮地區民眾直稱帝君廟，民國四十年花蓮發生大地震，廟宇遭震毀，於民國五十三年重建完成，本廟采傳統式華南建築造型，並揉合現代風格。</p>
+                        </div>
+                     </div> 
+                     
+                     
+<!--吉安車站 -->
+                     <div class="section5" id="吉安">
+                            <h3>吉安火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/5-1.jpg"class="img-responsive" alt="Responsive image"/>
+                    </div>
+                        
+                        <div class="col-md-7">
+                        <h4>吉安車站</h4>
+                        <p>位置｜臺灣花蓮縣吉安鄉<br/>簡介｜為臺灣鐵路管理局臺東線的鐵路車站。有島式月臺一座（實際使用中）。岸式月臺一座。1914年1月29日：設吉野驛。1948年1月1日：站名配合鄉名和地名改稱為吉安。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/5-2.gif"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>慶修院</h4>
+                        <p>位置｜花蓮縣吉安鄉吉安村中興路345-1號<br/>簡介｜創建於西元1917年，前身是日本真言宗高野派『吉野布教所』，是當時移民花蓮的日人最主要信仰中心。在經歷日本移民時代的風光，也經歷半個世紀的沉默與殘破，為目前臺灣保存最完整的真言宗寺院。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/5-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>知卡宣森林公園</h4>
+                        <p>位置｜花蓮縣吉安鄉中正路二段291號<br/>
+簡介｜知卡宣森林公園是新興的遊憩公園，原名南埔綠森林公園。占地18公傾，最早是空軍廢棄基地，以花蓮縣政府農業局管理的南埔苗圃為基礎規畫，開墾綠化，種植各種戶外花草樹木，像足一座綠色城堡。</p>
+                        </div>
+                     </div>   
+                     
+   <!--豐田車站 -->
+                     <div class="section5" id="豐田">
+                        <h3>豐田火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/6-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>豐田車站</h4>
+                        <p>位置｜臺灣花蓮縣壽豐鄉<br/>簡介｜為臺灣鐵路管理局臺東線的鐵路車站。有島式月臺與岸式月臺各一座。1913年5月1日：設立豐田乘降場（招呼站）。1916年9月10日：站房等設施完工，同日起改設豐田驛。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/6-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>五味屋</h4>
+                        <p>位置｜花蓮縣壽豐鄉豐山村站前街34號<br/>簡介｜五味屋利用豐田火車站前之日式閒置空間”風鼓鬥”建築為空間，以社區公益二手商店方式經營，作為鄰近村落兒童青少年的社區活動場所。五味屋是個充滿關係，不是塞滿東西的二手鋪子，在這裡，來自各方的志工陪著一群偏鄉孩子工作，生活與學習。</p>
+                        </div>
+                     </div>                     
+                     
+   <!--玉里車站 -->
+                     <div class="section5" id="玉里">
+                        <h3>玉里火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/7-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>玉里車站</h4>
+                        <p>位置｜臺灣花蓮縣玉里鎮<br/>簡介｜為臺灣鐵路管理局臺東線的鐵路車站。背中央山脈，向東隔秀姑巒溪與海岸山脈呎尺相望。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/7-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>赤柯山</h4>
+                        <p>位置｜花蓮縣玉里鎮觀音裡高寮<br/>簡介｜早在日治時期，赤柯山就以盛產赤柯樹聞名。光復後，陸續有來自西部的漢人移入開墾，先是種雜糧，後來才改種金針。經過4、50年的辛勤開墾，赤柯山已從一片荒蕪的山頭轉變成以金針花海聞名的觀光勝地。 </p>
+                        </div>
+                     </div>    
+                     
+                                            
+           <!--臺東車站 -->
+                     <div class="section5" id="台東">
+                        <h3>臺東火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/8-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>臺東車站</h4>
+                        <p>位置｜臺灣臺東縣臺東市<br/>簡介｜為臺灣鐵路管理局臺東線、南迴線的鐵路車站。本站於1980年東線鐵路于卑南站施工，揭開了蘊藏豐富的卑南文化，車站本身即位于文化園區內。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/8-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>琵琶湖公園</h4>
+                        <p>位置｜臺東縣臺東市中山路與特二號道路交叉口<br/>簡介｜琵琶湖公園昔稱黑森林公園，位於臺東市北端，距車站約兩公里路程。早期植樹作為防風林以隔絕卑南溪風砂，經歷年修改整建，已成為市民最佳休閒、活動的地方。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/8-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>金樽陸連島</h4>
+                        <p>位置｜臺東縣東河鄉省道台11線140公里處<br/>
+簡介｜金樽陸連島是臺灣唯一正在生成的陸連島，深具學術價值，整個範圍包括金樽漁港、白沙灣海灘及金樽附近的山澗峽谷，因灣似酒杯，故取名為「金樽」，又因形狀頗似船錨，亦稱「錨島」或「錨狀礁」。</p>
+                        </div>
+                     </div> 
+                     
+                      <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/8-4.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>月光小棧</h4>
+                        <p>位置｜臺東縣東河鄉都蘭村46鄰20<br/>
+簡介｜月光小棧位於都蘭山麓，座山面海，擁絕佳眺望視野，原本是都蘭林場的行政中心，也曾是土地銀行的招待所，後轉給交通部觀光局由東管處代管。</p>
+                        </div>
+                     </div>                 
+               
+<!--知本車站 -->
+                     <div class="section5" id="知本">
+                        <h3>知本火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/9-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>知本車站</h4>
+                        <p>位置｜臺灣臺東縣臺東市<br/>簡介｜為臺灣鐵路管理局南回線的鐵路車站。鄰近知本溫泉，但車站周邊甚為荒涼，多半仍須靠轉車才能前往溫泉觀光區。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/9-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>知本風景區</h4>
+                        <p>位置｜臺東縣卑南鄉<br/>簡介｜知本溫泉區是極富盛名的觀光地，到知本若不泡溫泉，可說是有虛此行。此處的溫泉是在民國六年，由本地的原住民(卑南族)所發現，日據時期建有公共浴室和賓館，光復後旅社、觀光大飯店陸續興建，都以溫泉作為號召主題。</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/9-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>知本森林遊樂區</h4>
+                        <p>位置｜臺東縣卑南鄉溫泉村龍泉路290號<br/>
+簡介｜知本溫泉遊樂區可分成三部份，一是觀林吊橋下的知本溪，有露天溫泉的源頭。一是溪床下方左側二○○餘公尺的支流，有一條隱瀑。另ㄧ部分則是吊橋後的知本遊樂區，可說是各相當多采多姿的好去處。</p>
+                        </div>
+                     </div>                 
+               
+          <!--太麻里車站 -->
+                     <div class="section5" id="太麻里">
+                        <h3>太麻里火車站週邊景點 </h3>
+                  	</div>
+                    
+                    <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive" >
+                         <img src="images/Scenery/e/10-1.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>太麻里車站</h4>
+                        <p>位置｜臺灣臺東縣太麻里鄉<br/>簡介｜為臺灣鐵路管理局南迴線的鐵路車站；在「迎接千禧年第一道曙光」活動中聲名大噪，號稱臺灣最早看見日出的車站。本站位於太麻裡鄉大王村276-13號，前為太平洋可眺望綠島及蘭嶼，後是有名的金針山。<br/><br/><br/><br/></p>
+                        </div>
+                     </div>
+                     
+                     <div class="section6 row">
+                        <div class="col-md-5 col-xs-6 img-responsive">
+                        <img src="images/Scenery/e/10-2.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                   
+                        <div class="col-md-7">
+                        <h4>金針山</h4>
+                        <p>位置｜臺東縣太麻里鄉大王村<br/>簡介｜金針山山上風景優美: 4~5月百合花季，8~10月金針花季，11~2月櫻花季。
+金針山景觀豐富，有溪流，瀑布，高山，峽谷，炎夏賞花季淡季時，來到金針山不怕沒東西看，深入山林，沿著溪穀，螢光點點，心曠神怡。
+</p>
+                        </div>
+                     </div>
+                    
+                     <div class="section6 row">
+                        <div class="col-md-5 img-responsive">
+                        <img src="images/Scenery/e/10-3.jpg"class="img-responsive" alt="Responsive image" />
+                        </div>
+                        
+                        <div class="col-md-7">
+                        <h4>千禧曙光紀念園區</h4>
+                        <p>位置｜車站前方之日升大道，往海邊走即可看到<br/>
+簡介｜太麻里鄉在2000年舉辦的迎接第一道曙光活動，吸引上萬名遊客及各國嘉賓湧入，因此聲名大噪，並將千禧迎曙光紀念園區列為遊客朝聖的超優質景點，可佇立在千禧曙光園區涼亭下或漫步在沙灘上，遠眺太平洋觀日出，觀賞浩瀚的大海。</p>
+                        </div>
+                     </div>         
+               
+                                
+        </div>                     
+    </div> <!--右 -->
+	</div> <!--section-->     
+    </div> 
+    </section>
+    </div>
+    </div>
+   
+ 
+
+  <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <span>Copyright &copy; 2014 <a href="#">黃筠喬 林晏安 蔡文琪 劉學旻 曾詩庭 陳敏捷</a> - <a href="http://www.templatemo.com/page/1">HTML5 Template</a> by <a href="http://www.templatemo.com/preview/templatemo_401_sprint" rel="nofollow">Sprint</a></span>
+                </div> <!-- /.col-md-6 -->
+               <!-- <div class="col-md-6 col-sm-6 col-xs-6">
+                    <ul class="social">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-rss"></a></li>
+                    </ul>
+                </div> <!-- /.col-md-6 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.site-footer -->
+
+
+    
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!--  Free HTML5 Template by http://www.templatemo.com -->
+       <script type="text/javascript">
+				var sceneOptions = {duration: 0, offset: -100};
+				var elements = $("#tweens div3");
+				var titles = $("#tween p");
+				
+				// 0=container
+				// 1=title (h3 h4無法套用特效)
+				// 2=Taiwan
+				// 3=yellow nor
+				// 4=yellow mid
+				// 5=yellow sou
+				// 6=yellow eas
+				// 7=sensor1
+				// 8=sensor2
+				// 9=sensor3
+				// 10=fade out sensor
+				// 11.12=pin east-list
+
+				// fade in for Taiwan
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.5")
+					.triggerElement(elements[0])
+					//.setPin(elements[2], {pushFollowers: true})
+					.setTween(TweenMax.from(elements[2], 1, {autoAlpha: 0}));
+					
+				// fade out title 
+				new ScrollScene(sceneOptions)
+					.offset(0)
+					.addTo(controller)
+					.triggerHook("0.7")
+					.triggerElement(elements[1])
+					.setTween(TweenMax.to(elements[1], 1, {autoAlpha: 0}));	
+
+				
+				// move Taiwan
+				new ScrollScene(sceneOptions)
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[1])
+					
+					.setTween([TweenMax.to(elements[2], 1, {left: "50%", x: -650, ease: Back.easeOut}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+				
+				//fade in nor	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[7])
+					.setTween([TweenMax.from(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+					
+				//fade out nor	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.7")
+					.triggerElement(elements[8])
+					.setTween([TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+				
+				//fade in mid	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[8])
+					.setTween([TweenMax.from(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+					
+				//fade out mid	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.7")
+					.triggerElement(elements[9])
+					.setTween([TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+				
+				//fade in sou	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[9])
+					.setTween([TweenMax.from(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+				
+				//fade out sou	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.7")
+					.triggerElement(elements[10])
+					.setTween([TweenMax.to(elements[5], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[6], 0.5, {autoAlpha: 0})]);
+				
+				//fade in east	
+				new ScrollScene(sceneOptions)							                    
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[10])
+					.setTween([TweenMax.from(elements[6], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[3], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[4], 0.5, {autoAlpha: 0}),
+					TweenMax.to(elements[5], 0.5, {autoAlpha: 0})]);
+					
+				
+				// fade out Taiwan
+				new ScrollScene(sceneOptions)
+					.offset(200)
+					.addTo(controller)
+					.triggerHook("0.6")
+					.triggerElement(elements[10]) // use previous element as trigger, as top position changes during spin
+					.setTween(TweenMax.to(elements[2], 1, {autoAlpha: 0}));
+			
+			
+/*				// pin east
+				new ScrollScene(sceneOptions)
+					.addTo(controller)
+					.triggerHook("0.2")
+					.triggerElement(elements[11])
+					.setPin(elements[11], {pushFollowers: true});
+				// pin east
+				new ScrollScene(sceneOptions)
+					.addTo(controller)
+					.triggerHook("0.2")
+					.triggerElement(elements[11])
+					.setPin(elements[12], {pushFollowers: true});*/
+					//.setTween(TweenMax.to(elements[2], 1, {scale: 0, ease: Back.easeOut}));
+					</script> 
+                    
+                    
+ <!-- Include jQuery and jquery.pin -->
+    <script src="js/jquery.pin.min.js"></script>
+    <script src="js/jquery.pin.js"></script>
+
+
+    <!-- PIN ALL THE THINGS! -->
+    <script>
+      $(".pinned").pin({containerSelector: ".section4", minWidth: 940});
+    </script>
+    <!-- That's all - pretty easy, right? -->
+    
+    
+    
+    <!-- Analytics -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18439732-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+</body>
+</html>
